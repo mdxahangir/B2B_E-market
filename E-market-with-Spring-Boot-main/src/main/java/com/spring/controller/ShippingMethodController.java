@@ -15,21 +15,21 @@ public class ShippingMethodController {
 
     private final ShippingMethodService shippingMethodService;
 
-    // Create - নতুন ShippingMethod যোগ করা
+    // Create
     @PostMapping
     public ResponseEntity<ShippingMethod> createShippingMethod(@RequestBody ShippingMethod shippingMethod) {
         ShippingMethod created = shippingMethodService.createShippingMethod(shippingMethod);
         return ResponseEntity.ok(created);
     }
 
-    // Read - সব ShippingMethod এর লিস্ট দেখানো
+    // Read 
     @GetMapping
     public ResponseEntity<List<ShippingMethod>> getAllShippingMethods() {
         List<ShippingMethod> list = shippingMethodService.getAllShippingMethods();
         return ResponseEntity.ok(list);
     }
 
-    // Read - id অনুযায়ী একটি ShippingMethod আনা
+    // Read 
     @GetMapping("/{id}")
     public ResponseEntity<ShippingMethod> getShippingMethodById(@PathVariable Long id) {
         return shippingMethodService.getShippingMethodById(id)
