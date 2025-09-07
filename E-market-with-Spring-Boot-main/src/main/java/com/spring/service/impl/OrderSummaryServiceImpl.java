@@ -17,7 +17,7 @@ public class OrderSummaryServiceImpl implements OrderSummaryService {
     @Autowired
     private OrderSummaryRepository orderSummaryRepository;
     
-    //new
+   
     @Override
     public BigDecimal getTotalRevenue() {
         return orderSummaryRepository.getTotalRevenue();
