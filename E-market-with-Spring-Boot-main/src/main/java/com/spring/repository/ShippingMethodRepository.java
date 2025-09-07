@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ShippingMethodRepository extends JpaRepository<ShippingMethod, Long> {
-    // JpaRepository-র built-in method গুলো ব্যবহার করবো
+   
 }
