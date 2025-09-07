@@ -23,7 +23,7 @@ public class User {
     private String email;
 
     @Column(nullable = false)
-    private String password; // hashed
+    private String password; 
 
     @Column(length = 20, unique = true)
     private String phoneNumber;
