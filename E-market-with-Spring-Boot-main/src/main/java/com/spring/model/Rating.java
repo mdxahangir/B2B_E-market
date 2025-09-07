@@ -22,12 +22,12 @@ public class Rating {
 
     private String review;
 
-    // ✅ Many ratings belong to one product
+ 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "userId", nullable = false)
     private User user;
 
-    // ✅ Many ratings belong to one product
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", nullable = false)
     private Product product;
