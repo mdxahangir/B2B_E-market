@@ -24,7 +24,7 @@ public class Category {
 
     @Column(length = 255)
     private String description;
-    // ✅ Audit Fields
+    //  Audit Fields
     @Column(name = "created_by_code", length = 50, updatable = false)
     private String createdByCode;
 
