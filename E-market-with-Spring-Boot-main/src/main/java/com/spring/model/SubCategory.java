@@ -28,7 +28,7 @@ public class SubCategory {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "category_id")
     private Category category;
-    // ✅ Audit Fields
+   
     @Column(name = "created_by_code", length = 50, updatable = false)
     private String createdByCode;
 
