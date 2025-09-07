@@ -23,7 +23,7 @@ public class UserAddressServiceImpl implements UserAddressService {
     public UserAddress updateAddress(Long id, UserAddress updatedAddress) {
         UserAddress existing = userAddressRepository.findById(id)
                 .orElseThrow(() -> new RuntimeException("Address not found with id: " + id));
-        updatedAddress.setId(id); // ID সেট করে দিয়ে নতুন Address save করি
+        updatedAddress.setId(id);
         return userAddressRepository.save(updatedAddress);
     }
 
