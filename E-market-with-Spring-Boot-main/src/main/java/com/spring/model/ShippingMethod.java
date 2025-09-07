@@ -18,22 +18,22 @@ public class ShippingMethod {
     private Long id;
 
     @Column(nullable = false, length = 100, unique = true)
-    private String name; // e.g., "Standard Shipping", "Express", "Next-Day"
+    private String name; 
 
     @Column(length = 255)
     private String description;
 
     @Column(nullable = false, precision = 10, scale = 2)
-    private BigDecimal cost; // Flat shipping cost or base cost
+    private BigDecimal cost; 
 
     @Enumerated(EnumType.STRING)
     @Column(nullable = false)
-    private ShippingProvider provider; // e.g., DHL, FedEx, Local, Other
+    private ShippingProvider provider; 
 
     @Column(nullable = false)
-    private Integer estimatedDeliveryDays; // e.g., 3, 5
+    private Integer estimatedDeliveryDays; 
 
     @Column(nullable = false)
-    private Boolean isActive; // enable/disable for frontend
+    private Boolean isActive; 
 
 }
