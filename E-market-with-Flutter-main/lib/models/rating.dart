@@ -25,7 +25,6 @@ class Rating {
     );
   }
 
-  // ✅ এটা ক্লাসের ভেতরেই রাখতে হবে
   Map<String, dynamic> toJson(int userId, int productId) {
     return {
       'rating': rating,
