@@ -10,7 +10,7 @@ import '../models/category.dart';
 
 import '../models/product.dart';
 import '../providers/product_provider.dart';
-import '../services/category_service.dart';   // We'll create this service to fetch categories // And this one for subcategories
+import '../services/category_service.dart';  
 
 class AddProductScreen extends StatefulWidget {
   const AddProductScreen({super.key});
@@ -53,7 +53,7 @@ class _AddProductScreenState extends State<AddProductScreen> {
           await SubCategoryService.getSubCategoriesByCategoryId(categoryId);
       setState(() {
         subCategories = fetchedSubCategories;
-        selectedSubCategory = null; // Reset subcategory on new category select
+        selectedSubCategory = null; 
       });
     } catch (e) {
       print('Failed to load subcategories: $e');
