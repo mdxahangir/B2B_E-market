@@ -125,7 +125,7 @@ class _AddSubCategoryScreenState extends State<AddSubCategoryScreen> {
                   ),
                   const SizedBox(height: 10),
 
-                  /// 🔽 Category Dropdown
+                  //// Category Dropdown
                   DropdownButtonFormField<int>(
                     value: _selectedCategoryId,
                     decoration: const InputDecoration(labelText: "Select Category"),
