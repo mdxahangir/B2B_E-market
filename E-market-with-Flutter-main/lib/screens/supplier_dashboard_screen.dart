@@ -21,7 +21,7 @@ class SupplierDashboardScreen extends StatelessWidget {
         backgroundColor: Colors.deepPurple,
       ),
 
-      // ✅ Sidebar Navigation (Drawer)
+      //Drawer
       drawer: Drawer(
         backgroundColor: Colors.deepPurple.shade50,
         child: ListView(
@@ -83,7 +83,7 @@ class SupplierDashboardScreen extends StatelessWidget {
         ),
       ),
 
-      // ✅ Main Body - Dashboard Metrics Grid
+      // Dashboard Metrics Grid
       body: GridView.builder(
         padding: const EdgeInsets.all(16),
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
