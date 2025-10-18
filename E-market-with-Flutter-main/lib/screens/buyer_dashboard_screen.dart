@@ -87,7 +87,7 @@ class _BuyerDashboardScreenState extends State<BuyerDashboardScreen> {
                   ),
                   const SizedBox(height: 16),
 
-                  // 🔍 Search
+                  // Search
                   Row(
                     children: [
                       Expanded(
@@ -124,7 +124,7 @@ class _BuyerDashboardScreenState extends State<BuyerDashboardScreen> {
                   ),
                   const SizedBox(height: 20),
 
-                  // 🛍 Products
+                  // Products
                   const Text('Recommended for you', style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold)),
                   const SizedBox(height: 10),
                   GridView.builder(
@@ -145,7 +145,7 @@ class _BuyerDashboardScreenState extends State<BuyerDashboardScreen> {
     );
   }
 
-  // 🔹 Category Chip
+  // Category Chip
   Widget _buildCategoryChip(String name) {
     return Padding(
       padding: const EdgeInsets.only(right: 8),
@@ -157,7 +157,7 @@ class _BuyerDashboardScreenState extends State<BuyerDashboardScreen> {
     );
   }
 
-  // 🔹 Product Card with Wishlist, View Details, Discount
+  //  Product Card with Wishlist, View Details, Discount
   Widget _buildProductCard(Product product) {
     return Card(
       elevation: 4,
