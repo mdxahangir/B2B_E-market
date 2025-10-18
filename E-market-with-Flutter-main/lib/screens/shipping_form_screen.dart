@@ -19,7 +19,7 @@ class _ShippingFormPageState extends State<ShippingFormPage> {
   final TextEditingController _daysController = TextEditingController();
 
   String _selectedProvider = 'DHL';
-  bool _isActive = true; // New: for isActive field
+  bool _isActive = true;
 
   final List<String> providers = [
     'DHL',
@@ -43,7 +43,7 @@ class _ShippingFormPageState extends State<ShippingFormPage> {
           provider: _selectedProvider,
           estimatedDeliveryDays:
               int.tryParse(_daysController.text.trim()) ?? 0,
-          isActive: _isActive, // Pass isActive
+          isActive: _isActive, 
         );
 
         final created = await _service.createShippingMethod(method);
@@ -123,7 +123,7 @@ class _ShippingFormPageState extends State<ShippingFormPage> {
               ),
               const SizedBox(height: 16),
 
-              // ✅ New: isActive toggle
+            
               SwitchListTile(
                 title: const Text("Is Active"),
                 value: _isActive,
