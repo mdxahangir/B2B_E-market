@@ -6,5 +6,4 @@
 //
 //@Repository
 //public interface PaymentRepository extends JpaRepository<Payment, Long> {
-//    // You can add custom queries here if needed
 //}
