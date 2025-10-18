@@ -56,7 +56,7 @@ class _AddCategoryForm extends StatelessWidget {
   }
 }
 
-// 🟢 Dummy subcategory form
+//Dummy subcategory form
 class _AddSubCategoryForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -64,7 +64,7 @@ class _AddSubCategoryForm extends StatelessWidget {
   }
 }
 
-// 🟢 Dummy product form
+//Dummy product form
 class _AddProductForm extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
