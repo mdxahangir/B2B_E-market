@@ -21,7 +21,7 @@ class _BothDashboardScreenState extends State<BothDashboardScreen> {
   void initState() {
     super.initState();
 
-    // Define buyer and supplier dashboards
+    //  buyer and supplier dashboards
     _screens = [
       BuyerDashboardScreen(user: widget.user),
       SupplierDashboardScreen(user: widget.user),
